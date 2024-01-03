@@ -17,6 +17,8 @@ def getME_sunpos(lons, lats, timestamp=None, timezone=0, timeformat=None, key=No
         out = solarobj.get_azimuth()
     elif key=='elevation':
         out = solarobj.get_elevation()
+    elif key=='obj':
+        out = solarobj
     else:
         print('getME_sunpos: wrong key chosen!')
         out = False
